@@ -166,7 +166,6 @@ media
 .Python build/
 
 # Unit test / coverage reports
-.cache
 
 # pyenv
 .python-version
@@ -213,3 +212,10 @@ mapi/Scripts/deactivate.bat
 mapi/Scripts/django-admin.py
 mapi/pyvenv.cfg
 templates/
+mcsb/Include/
+mcsb/Scripts/Activate.ps1
+mcsb/Scripts/activate
+mcsb/Scripts/activate.bat
+mcsb/Scripts/deactivate.bat
+mcsb/Scripts/django-admin.py
+mcsb/pyvenv.cfg

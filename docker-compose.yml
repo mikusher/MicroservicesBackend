@@ -1,6 +1,7 @@
 version: '3'
 services:
   backend:
+    restart: always
     build: .
     env_file:
       - .env
@@ -9,3 +10,18 @@ services:
       - .:/app
     ports:
       - "8000:8000"
+    depends_on:
+      - db
+    links:
+      - db:db
+
+  db:
+    container_name: db
+    restart: always
+    image: postgres:latest
+    ports:
+      - "54322:5432"
+    env_file:
+      - .env
+    volumes:
+      - .dbdata:/var/lib/postgresql/data

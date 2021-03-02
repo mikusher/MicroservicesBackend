@@ -219,3 +219,4 @@ mcsb/Scripts/activate.bat
 mcsb/Scripts/deactivate.bat
 mcsb/Scripts/django-admin.py
 mcsb/pyvenv.cfg
+!/.env

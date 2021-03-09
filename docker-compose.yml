@@ -15,6 +15,16 @@ services:
     links:
       - db:db
 
+  queue:
+    restart: always
+    build: .
+    env_file:
+      - .env
+    command: python consumer.py
+    depends_on:
+      - db
+
+
   db:
     container_name: db
     restart: always
